@@ -1,0 +1,18 @@
+:root{
+    --base-color:#3883E8;
+    --add-color:#7B8FA9;
+    --add-color-light:#8096B4;
+    --text-color:#15171B;
+    --border: solid 1px var(--add-color);
+    --border-radius:3px;
+    --border-form:solid 1px #E5E5E5;
+    --placeholder:#B1B1B1;
+}
+
+.form__submit:hover{
+    --base-color:#3173CC;
+}
+
+.form__submit:active{
+    --base-color: #285EA8;
+}

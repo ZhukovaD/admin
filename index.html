@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Admin</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="style.css" rel="stylesheet">
+</head>
+<body>
+<main>
+    <section class="project">
+        <h1 class="project__name">Проект #1</h1>
+            <div class="project__slide slide">
+                <div class="slide__list">
+                    <div class="slide__description slide__description--active">
+                        <div class="slide__controls">
+                            <button class="slide__arrow slide__arrow--down">&#11015;</button>
+                        </div>
+                        <p class="slide__name">Slide 1</p>
+                    </div>
+                    <div class="slide__description">
+                        <div class="slide__controls">
+                            <button class="slide__arrow slide__arrow--up">&#11014;</button>
+                            <button class="slide__arrow slide__arrow--down">&#11015;</button>
+                        </div>
+                        <p class="slide__name">Slide 2</p>
+                    </div>
+                    <div class="slide__description">
+                        <div class="slide__controls">
+                            <button class="slide__arrow slide__arrow--up">&#11014;</button>
+                        </div>
+                        <p class="slide__name">Slide 3</p>
+                    </div>
+                </div>
+
+                <div class="slide__img">
+                    <img src="img/cat.jpg" height="400" width="577">
+                </div>
+            </div>
+    </section>
+
+    <div class="add">
+            <input class="add__radiobutton" id="tab-text" type="radio" name="tabs" checked>
+            <label class="add__tab" for="tab-text" title="Вкладка 1">+ Текст</label>
+
+            <input class="add__radiobutton" id="tab-table" type="radio" name="tabs">
+            <label class="add__tab" for="tab-table" title="Вкладка 2">+ Таблица</label>
+
+            <input class="add__radiobutton" id="tab-img" type="radio" name="tabs">
+            <label class="add__tab" for="tab-img" title="Вкладка 3">+ Изображение</label>
+
+            <section class="add__content add__content--text">
+                <form class="add__form form form--text">
+                    <label class="form__item">
+                        <span class="form__label">Название</span>
+                        <input class="form__input" type="text" name="name" placeholder="Название текста"
+                               autocomplete="off" value="">
+                    </label>
+                    <label class="form__item">
+                        <span class="form__label">Текст</span>
+                        <textarea class="form__textarea" name="comment" rows="10"
+                              placeholder="Текст"></textarea>
+                    </label>
+                    <button class="form__submit" type="submit">Отправить</button>
+                </form>
+            </section>
+
+            <section class="add__content add__content--table">
+                <form class="add__form form form--table">
+                    <label class="form__item">
+                        <span class="form__label">Название</span>
+                        <input class="form__input" type="text" name="name" placeholder="Название таблицы"
+                               autocomplete="off" value="">
+                    </label>
+                    <label class="form__item">
+                        <span class="form__label">CSS</span>
+                        <textarea class="form__textarea" name="user-css" rows="10"
+                                  placeholder="CSS"></textarea>
+                    </label>
+                    <input class="form__input" type="text" name="row" placeholder="Строка 1"
+                           autocomplete="off" value="">
+                    <input class="form__input" type="text" name="row" placeholder="Строка 2"
+                           autocomplete="off" value="">
+                    <input class="form__input" type="text" name="row" placeholder="Строка 3"
+                           autocomplete="off" value="">
+                    <input class="form__input" type="text" name="row" placeholder="Строка 4"
+                           autocomplete="off" value="">
+                    <input class="form__input" type="text" name="row" placeholder="Строка 5"
+                           autocomplete="off" value="">
+                    <button class="form__add-row" type="button">Добавить строку</button>
+                    <button class="form__submit" type="submit">Отправить</button>
+                </form>
+            </section>
+
+            <section class="add__content add__content--img">
+                <form class="add__form form form--table">
+                    <label class="form__item">
+                        <span class="form__label">Название</span>
+                        <input class="form__input" type="text" name="name" placeholder="Название изображения"
+                               autocomplete="off" value="">
+                    </label>
+
+                        <input class="form__input" type="file" name="image" placeholder="Выберите файл"
+                               autocomplete="off" value="">
+                    <button class="form__submit" type="submit">Отправить</button>
+                </form>
+            </section>
+    </div>
+</main>
+</body>
+</html>
